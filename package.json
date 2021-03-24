@@ -4,12 +4,12 @@
   "description": "A sample Node.js app using Express JS",
   "engines" : {
     "node" : "14.x"
-  },
+  },  
   "main" : "index.js",
   "scripts" : {
     "start" : "node index.js"
   },
   "dependencies":{
-    "express":"^4.15.2"
+    "express":"^4.17.1"
   }
 }
