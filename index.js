@@ -1,7 +1,12 @@
 const express = require('express');
+const app = express();
 const path = require('path');
-const PORT = process.env.PORT || 5000
+const router = express.Router();
 
-express()
-  .get('/', (req,res) => res.sendFile(path.join(__dirname+'/index.html')))
-  .listen(PORT, ()=> console.log(`Listening on ${ PORT }`))
+router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
+app.use('/', router);
+app.listen(process.env.port || 3000);
