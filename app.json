@@ -1,0 +1,8 @@
+{
+ "name": "Start on Heroku: Node.js" ,
+  "description" : "My boilerplate app on Node.js using Express JS",
+  "repository", "https://github.com/cbatuic/heroku_cbalaman",
+  "logo":"",
+  "keywords":"",
+  "image":"heroku/nodejs"
+}
